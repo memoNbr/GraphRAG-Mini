@@ -1,0 +1,12 @@
+# Direct dependencies for graphrag-pdf, at known-good versions.
+# Transitive deps (langchain-core, pydantic, numpy, scipy, ...) resolve
+# automatically -- only what this project imports is listed here.
+
+neo4j                 >= 6.3.1      # driver
+neo4j-graphrag        >= 1.19.0     # SimpleKGPipeline, retrievers, LLM adapters
+sentence-transformers >= 6.2.0      # local embeddings: all-MiniLM-L6-v2, 384-d
+pypdf                 >= 6.19.0     # PDF loading (neo4j-graphrag's data_loader)
+python-dotenv         >= 1.2.3      # .env loading
+langchain             >= 1.4.0      # init_chat_model, create_agent
+langchain-openai      >= 1.6.2      # ChatOpenAI backend for Groq and Ollama
+openai                >= 3.14.1     # OpenAILLM adapter used against Groq

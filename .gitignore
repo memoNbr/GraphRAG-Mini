@@ -1,0 +1,45 @@
+.vscode
+.env
+.venv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+# --- Secrets. NEVER commit these. ------------------------------------------
+# These files hold the Neo4j Aura password in plain text.
+Neo4j-*.txt
+Pass_Console.txt
+*password*.txt
+*credentials*.txt
+
+# --- Local research papers (not redistributable) ---------------------------
+# The three papers this project is built around. Drop your own PDFs into
+# workshop-genai/data/ -- they stay local.
+workshop-genai/data/CoALA.pdf
+workshop-genai/data/Simon_1970_-_Human_Problem_Solving,_The_State_of_the_Theory_in_1970.pdf
+workshop-genai/data/3640792.3675713.pdf
